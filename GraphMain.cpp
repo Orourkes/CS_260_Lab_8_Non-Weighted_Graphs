@@ -11,8 +11,8 @@
 #include "DGraph.hpp"
 
 #define BASE_LAB
-#define MIN_TREE
-#define CONNECT
+//#define MIN_TREE
+//#define CONNECT
 
 int main()
 {
@@ -52,21 +52,22 @@ int main()
     std::cout << "Now testing base lab functionality " << std::endl << std::endl;
 
     std::cout << "The list of nodes \n expected A C T Z X K Q J M U" << std::endl;
-    std::cout << " actually " << graph.listNodes() << std::endl << std::endl;
+    std::cout << " actually " << graph.listNodes() << std::endl; // << std::endl;
+
 
     std::cout << "The graph adjacency is: " << std::endl;
     std::cout << graph.displayAdjacency() << std::endl << std::endl;
 
-    std::cout << "The graph adjacency matrix is" << std::endl;
-    std::cout << graph.displayMatrix() << std::endl;
+    //std::cout << "The graph adjacency matrix is" << std::endl;
+    //std::cout << graph.displayMatrix() << std::endl;
 
     std::cout << "The breadth traversal from A" << std::endl;
     std::cout << " expected A: Z T C X Q K J M with U unreachable" << std::endl;
-    std::cout << " actually " << graph.breadthFirst('A') << std::endl << std::endl;
+    //std::cout << " actually " << graph.breadthFirst('A') << std::endl << std::endl;
 
     std::cout << "The depth first traversal from A" << std::endl;
     std::cout << " expected A: Z X C K Q J M T with U unreachable" << std::endl;
-    std::cout << " actually " << graph.depthFirst('A') << std::endl << std::endl;
+    //std::cout << " actually " << graph.depthFirst('A') << std::endl << std::endl;
 
     std::cout << "Done testing base lab" << std::endl << std::endl;
 #endif // BASE_LAB
